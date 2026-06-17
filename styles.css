@@ -210,6 +210,7 @@ a {
   font-size: clamp(28px, 6vw, 46px);
   line-height: 1.15;
   margin: 0 0 16px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 
 .hero__subtitle {
@@ -217,6 +218,7 @@ a {
   color: rgba(255, 255, 255, 0.92);
   margin: 0 0 28px;
   max-width: 520px;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Sections ===== */
