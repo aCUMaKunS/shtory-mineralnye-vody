@@ -2,6 +2,9 @@
 
 Одностраничный сайт на чистых HTML/CSS/JS (без фреймворков и сборщиков).
 
+Репозиторий: https://github.com/aCUMaKunS/shtory-mineralnye-vody
+Сайт (GitHub Pages): https://acumakuns.github.io/shtory-mineralnye-vody/
+
 ## Структура
 
 - `index.html` — разметка страницы
@@ -26,11 +29,9 @@
 
 ## Как опубликовать
 
-### Вариант 1 — GitHub Pages
-1. Запушьте репозиторий на GitHub.
-2. В настройках репозитория откройте **Settings → Pages**.
-3. В разделе **Build and deployment** выберите ветку `main` и папку `/ (root)`.
-4. Через 1–2 минуты сайт будет доступен по адресу `https://<username>.github.io/<repo>/`.
+### Вариант 1 — GitHub Pages (уже включён для этого репозитория)
+Сайт уже опубликован: https://acumakuns.github.io/shtory-mineralnye-vody/
+После каждого `git push` в ветку `master` сайт обновится автоматически через 1–2 минуты.
 
 ### Вариант 2 — Netlify
 1. Зайдите на [netlify.com](https://www.netlify.com) и войдите через GitHub.
