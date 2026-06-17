@@ -162,24 +162,6 @@ a {
   flex-shrink: 0;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  flex: 1;
-  justify-content: center;
-}
-
-.nav__link {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  white-space: nowrap;
-}
-.nav__link:hover {
-  color: var(--color-accent);
-}
-
 .header__actions {
   display: flex;
   align-items: center;
@@ -190,36 +172,6 @@ a {
 .header__phone {
   min-height: 40px;
   padding: 8px 16px;
-}
-
-.burger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 44px;
-  height: 44px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.burger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--color-text);
-  margin: 0 auto;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-.burger[aria-expanded="true"] span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.burger[aria-expanded="true"] span:nth-child(2) {
-  opacity: 0;
-}
-.burger[aria-expanded="true"] span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ===== Hero ===== */
@@ -425,50 +377,6 @@ a {
   font-size: 14px;
 }
 
-/* ===== Reviews ===== */
-.grid--reviews {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.review {
-  background: var(--color-card);
-  border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: var(--shadow);
-}
-
-.review__head {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-
-.review__avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.review__name {
-  margin: 0;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.review__city {
-  margin: 0;
-  font-size: 13px;
-  color: var(--color-text-muted);
-}
-
-.review__text {
-  margin: 0;
-  font-size: 14px;
-  color: var(--color-text-muted);
-}
-
 /* ===== CTA ===== */
 .cta {
   background: var(--color-accent-dark);
@@ -566,39 +474,8 @@ a {
 
 /* ===== Mobile ===== */
 @media (max-width: 880px) {
-  .nav {
-    position: fixed;
-    top: var(--header-h);
-    left: 0;
-    right: 0;
-    background: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 8px 20px 16px;
-    transform: translateY(-12px);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-  }
-  .nav.is-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .nav__link {
-    width: 100%;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--color-border);
-  }
   .header__phone {
     display: none;
-  }
-  .burger {
-    display: flex;
   }
   .floating {
     bottom: max(16px, env(safe-area-inset-bottom));
